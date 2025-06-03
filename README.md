@@ -1,4 +1,6 @@
-# ⚡ ARKSTORM - Monitoramento de Falhas Energéticas e Cibersegurança
+<img width="467" alt="Logo dark mode" src="https://github.com/user-attachments/assets/169be40e-8e44-41ee-be43-e73022479cd7" />
+
+# Arkstorm - Monitoramento de Falhas Energéticas e Cibersegurança
 
 O projeto ARKSTORM é uma aplicação em C# .NET Console baseada no padrão MVC (Model-View-Controller), criada com o objetivo de oferecer uma solução robusta para registrar, acompanhar e analisar falhas energéticas e incidentes cibernéticos, bem como os impactos que causam em equipamentos críticos de serviços essenciais.
 
