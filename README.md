@@ -45,6 +45,7 @@ O ARKSTORM simula um sistema interno de monitoramento de ocorrências reais, ace
 
 ---
 
+
 ---
 
 ## 📦 Pacotes NuGet e Dependências
@@ -134,7 +135,51 @@ dotnet build
 ```bash
 dotnet run
 ```
+
 ---
+
+
+---
+
+## ✅ Requisitos Funcionais
+
+- O sistema deve permitir login de usuários com validação no banco de dados Oracle.
+- Deve permitir o registro de falhas energéticas, com dados como cidade, descrição, risco e data/hora.
+- Deve listar todas as falhas registradas.
+- Deve gerar um relatório filtrando falhas por cidade.
+- Deve registrar incidentes cibernéticos com tipo, descrição e impacto.
+- Deve registrar equipamentos críticos com nome, localização e impacto esperado.
+- Deve listar os equipamentos cadastrados.
+
+## ❌ Requisitos Não Funcionais
+
+- O sistema deve ser escrito em linguagem C# com estrutura modular (MVC).
+- A persistência deve ser realizada em banco de dados Oracle, com conexão via Oracle.ManagedDataAccess.Core.
+- A interface será via console (texto).
+- O sistema deve apresentar tratamento de exceções via try-catch.
+- O tempo de resposta para listagens deve ser menor que 2 segundos para até 100 registros.
+- O código deve ser legível, indentado e comentado.
+
+---
+
+## 📈 Fluxograma do Sistema (Mermaid)
+
+```mermaid
+graph TD
+    A[Início] --> B[Login de Usuário]
+    B -->|Credenciais válidas| C[Menu Principal]
+    B -->|Credenciais inválidas| B
+
+    C --> D[Registrar Falha]
+    C --> E[Listar Falhas]
+    C --> F[Relatório por Cidade]
+    C --> G[Registrar Incidente]
+    C --> H[Listar Incidentes]
+    C --> I[Cadastrar Equipamento]
+    C --> J[Listar Equipamentos]
+    C --> K[Fim]
+```
+
 
 ## 📌 Considerações
 
