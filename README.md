@@ -188,3 +188,7 @@ graph TD
 - O código é modular e pronto para expansão com novas funcionalidades.
 
 ---
+
+## Video
+
+https://www.youtube.com/watch?v=_AKtP4T6yt8
